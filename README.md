@@ -1,24 +1,28 @@
-# README
+# PodCritic - A podcast review platform
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+PodCritic is a platform where users can review and rate their podcasts.
+Users can, rate podcasts, read reviews, and leave their own reviews.
 
-Things you may want to cover:
+## Setup Instructions
 
-* Ruby version
+1. After cloning the repository, navigate to the project directory and run the following command to install the required Gems:
 
-* System dependencies
+```bash
+bundle install
+```
 
-* Configuration
+2. Set Up the Database
+   To create the SQLite3 database and run the necessary migrations, execute the following commands:
 
-* Database creation
+```bash
+rails db:create
+rails db:migrate
+rails db:seed
+```
 
-* Database initialization
+3. Start the Rails Server
+   To start the application, run:
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```bash
+rails server
+```
